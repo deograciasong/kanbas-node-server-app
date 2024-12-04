@@ -9,8 +9,10 @@ export default function AssignmentRoutes(app) {
  app.put("/api/assignments/:aid", async (req, res) => {
   const { aid } = req.params;
   const assignmentUpdates = req.body;
-  const status = await assignmentsDao.updateAssignemnt(aid, assignmentUpdates);
+  const status = await assignmentsDao.updateAssignment(aid, assignmentUpdates);
   res.send(status);
 });
+
+
 
 }
