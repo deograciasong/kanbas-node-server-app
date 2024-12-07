@@ -1,15 +1,15 @@
 import * as quizzesDao from "./dao.js";
 export default function quizRoutes(app) {
- app.delete("/api/quizzes/:aid", async (req, res) => {
+ app.delete("/api/quizzes/:qid", async (req, res) => {
    const { qid } = req.params;
-   const status = await quizzesDao.deletequiz(aid);
+   const status = await quizzesDao.deletequiz(qid);
    res.send(status);
  });
 
- app.put("/api/quizzes/:aid", async (req, res) => {
-  const { aid } = req.params;
+ app.put("/api/quizzes/:qid", async (req, res) => {
+  const { qid } = req.params;
   const quizUpdates = req.body;
-  const status = await quizzesDao.updateQuiz(aid, quizUpdates);
+  const status = await quizzesDao.updateQuiz(qid, quizUpdates);
   res.send(status);
 });
 

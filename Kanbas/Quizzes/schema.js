@@ -6,7 +6,13 @@ const schema = new mongoose.Schema(
     course: { type: mongoose.Schema.Types.ObjectId, ref: "CourseModel" },
     points: String,
     numberOfQuestions: String,
-    availability: String
+    availability: String,
+    instructions: String,
+    group: String,
+    type: String,
+    start: String,
+    due: String,
+    end: String,
   },
   { collection: "quizzes" }
 );

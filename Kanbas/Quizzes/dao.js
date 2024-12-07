@@ -9,14 +9,19 @@ export function createquiz(quiz) {
     return model.create(quiz);
 }
 
+
 export function deletequiz(qid) {
     return model.findByIdAndDelete(qid);
 }
 
-export function updatequiz(qid, quizUpdates) {
+export function updateQuiz(qid, quizUpdates) {
     return model.findByIdAndUpdate(qid, quizUpdates, { new: true });
 }
 
 export function findUserById (courseId) {
     return model.findById(courseId);
+}
+
+export function findQuizById(quiz) {
+    return model.findById(quiz);
 }
