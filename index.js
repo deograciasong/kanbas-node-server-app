@@ -9,6 +9,7 @@ import ModuleRoutes from "./Kanbas/Modules/routes.js";
 import AssignmentRoutes from './Kanbas/Assignments/routes.js';
 import EnrollmentRoutes from './Kanbas/Enrollments/routes.js';
 import quizRoutes from './Kanbas/Quizzes/routes.js';
+import questionRoutes from './Kanbas/Questions/routes.js';
 import "dotenv/config";
 import mongoose from 'mongoose';
 
@@ -43,6 +44,7 @@ ModuleRoutes(app);
 AssignmentRoutes(app);
 EnrollmentRoutes(app);
 quizRoutes(app);
+questionRoutes(app);
 Lab5(app);
 Hello(app);
 

@@ -13,6 +13,16 @@ const schema = new mongoose.Schema(
     start: String,
     due: String,
     end: String,
+    type: String,
+    group: String,
+    shuffleAnswers: String,
+    timeLimit: Number,
+    multipleAttempts: String,
+    showCorrectAnswers: String,
+    accessCode: String,
+    oneQuestionAtATime: String,
+    webcamRequired: String,
+    lockQuestionsAfterAnswering: String,
   },
   { collection: "quizzes" }
 );
