@@ -18,4 +18,4 @@ export default function EnrollmentRoutes(app) {
     const userEnrollments = dao.findCoursesForUser(userId);
     res.json(userEnrollments);
   });
-}
+} 

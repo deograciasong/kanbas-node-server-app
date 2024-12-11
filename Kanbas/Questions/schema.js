@@ -7,6 +7,7 @@ const questionSchema = new mongoose.Schema(
    points: Number,
    text: String,
    choices: [],
+   correctAnswer: String,
  },
  { collection: "questions" }
 );

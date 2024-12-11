@@ -1,8 +1,10 @@
 import model from "./model.js";
 
-export function findQuestionsForQuiz(quizId) {
+export async function findQuestionsForQuiz(quizId) {
     return model.find({ quiz: quizId });
+    
 }
+ 
 
 export function createQuestion(question) {
     delete question._id;
